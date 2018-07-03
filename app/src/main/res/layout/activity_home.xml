@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.dan.dmxlightcontroller.Home">
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:text="@string/dmx_status" />
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select New Color"
+        android:onClick="onSelectColor"/>
+
+
+  <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:shrinkColumns="*" >
+
+        <TableRow
+            android:id="@+id/tags"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <Button
+                android:id="@+id/prevColor1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Previous 1"
+                android:onClick="onPreviousColor"/>
+            <Button
+                android:id="@+id/prevColor2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Previous 2"
+                android:onClick="onPreviousColor"/>
+            <Button
+                android:id="@+id/prevColor3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Previous 3"
+                android:onClick="onPreviousColor"/>
+            <Button
+                android:id="@+id/prevColor4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Previous 4"
+                android:onClick="onPreviousColor"/>
+      </TableRow>
+    </TableLayout>
+
+</LinearLayout>
